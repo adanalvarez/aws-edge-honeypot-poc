@@ -5,6 +5,6 @@ output "ip_set_id" {
 
 output "cloudfront_url" {
   description = "The URL of the CloudFront distribution"
-  value       = "https://${aws_cloudfront_distribution.honeypot_distribution.domain_name}"
+  value       = "https://${aws_cloudfront_distribution.content_distribution.domain_name}"
 }
 
