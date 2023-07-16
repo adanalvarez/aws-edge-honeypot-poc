@@ -19,6 +19,10 @@ The infrastructure for this project is defined in Terraform. It includes:
 |------------------------------------------|
 | Due to restrictions on Lambda@Edge functions, environment variables are not allowed. Therefore, the Lambda function must have the IP Set ID hardcoded into its code.         |
 
+<p align="center">
+  <img src="./honeypot_diagram.PNG">
+</p>
+
 # Setup 
 
 - **Apply the Terraform configuration:** Run ```terraform apply``` to create the S3 bucket, CloudFront distribution, Lambda function, and WAF resources. This also outputs the IP Set ID.
